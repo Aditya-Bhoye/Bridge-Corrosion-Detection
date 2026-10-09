@@ -28,3 +28,7 @@ The dataset is not in this repository.
 ## Stack
 
 Python · PyTorch · OpenCV · NumPy · Google Colab
+
+## BridgeGuard dashboard
+
+A React and Tailwind dashboard with image upload, coverage results, segmentation overlays and local inspection history is now included. See [SETUP.md](SETUP.md) for frontend and Python inference API setup. Demo mode is clearly labeled; real detection requires trained notebook weights.
