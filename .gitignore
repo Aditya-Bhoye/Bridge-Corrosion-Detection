@@ -5,3 +5,5 @@ __pycache__/
 *.pth
 *.pt
 .env
+*.onnx.data
+public/models/*_fp32.onnx

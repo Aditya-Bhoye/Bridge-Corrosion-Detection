@@ -6,8 +6,7 @@ export function validateFile(file) {
   return '';
 }
 export function severity(coverage) { return coverage >= 25 ? 'High' : coverage >= 10 ? 'Moderate' : 'Low'; }
-export function demoResult() { return {coverage:18.7,severity:severity(18.7),demo:true,mask:null}; }
 export function validateResult(data) {
-  if (!Number.isFinite(data.coverage) || data.coverage < 0 || data.coverage > 100) throw new Error('The API returned an invalid coverage value.');
-  return {...data,severity:severity(data.coverage),demo:false};
+  if (!Number.isFinite(data.coverage) || data.coverage < 0 || data.coverage > 100) throw new Error('The analysis returned an invalid coverage value.');
+  return {...data,severity:severity(data.coverage)};
 }

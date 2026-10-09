@@ -31,4 +31,4 @@ Python · PyTorch · OpenCV · NumPy · Google Colab
 
 ## BridgeGuard dashboard
 
-A React and Tailwind dashboard with image upload, coverage results, segmentation overlays and local inspection history is now included. See [SETUP.md](SETUP.md) for frontend and Python inference API setup. Demo mode is clearly labeled; real detection requires trained notebook weights.
+A React dashboard runs the trained U-Net directly in the browser with ONNX Runtime Web (WebGPU when available, otherwise WebAssembly). It can be hosted for free on GitHub Pages, and photos never leave the user's device. See [SETUP.md](SETUP.md) to export the model, run the site locally and deploy it.
